@@ -20,7 +20,9 @@ const MovieList: React.FC<MovieListProps> = ({ movies }) => {
   return (
     <>
       <Header movies={movies} />
-      <div className="movies-container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 p-3 md:p-[100px]">
+      <div className='p-3 md:px-[150px] py-16'>
+        <h1 className='text-xl font-semibold mb-5'>Popular Movies</h1>
+      <div className="movies-container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 ">
       {movies.map((movie) => (
         <Link to={`/movie/${movie.id}`} key={movie.id} className="movie-link">
           <div className="movie-card md:w-[80%] flex text-white overflow-hidden shadow-lg">
@@ -44,6 +46,7 @@ const MovieList: React.FC<MovieListProps> = ({ movies }) => {
         </Link>
       ))}
     </div>
+      </div>
     </>
   );
 };

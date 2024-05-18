@@ -31,15 +31,15 @@ const MovieDetail: React.FC<MovieDetailProps> = ({ movies }) => {
           <img
             src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
             alt={movie.title}
-            className="w-full h-[50vh] object-cover"
+            className="w-full h-[40vh] object-cover"
           />
         )}
         <div className="p-4 w-full">
-          <h1 className="text-3xl font-bold mb-4">{movie.title}</h1>
-          <p className="text-lg mb-2">Release Date: {movie.release_date}</p>
-          <p className="text-lg mb-2">Popularity: {movie.popularity}</p>
-          <p className="text-sm">{movie.overview}</p>
-          <button className='border px-3 py-1 mt-5 bg-white text-black font-semibold'>
+          <h1 className="text-3xl font-bold mb-1">{movie.title}</h1>
+          <p className="text-base md:text-sm mb-2 text-gray-400 italic">Release Date: {movie.release_date}</p>
+          <p className="text-base mb-3">{movie.overview}</p>
+          <p className="text-base mb-2">Popularity: {movie.popularity}</p>
+          <button className='border px-3 py-1 mt-3 bg-white text-black font-semibold'>
           <a href={`https://www.awafim.tv/browse?q=${movie.title}`}>Download Here</a>
           </button>
         </div>
