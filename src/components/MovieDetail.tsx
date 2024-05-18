@@ -25,8 +25,8 @@ const MovieDetail: React.FC<MovieDetailProps> = ({ movies }) => {
   }
 
   return (
-    <div className="p-6">
-      <div className="flex flex-col items-center bg-gray-800 text-white rounded-lg overflow-hidden shadow-lg">
+    <div className="md:p-6">
+      <div className="flex flex-col items-center text-white rounded-lg overflow-hidden shadow-lg">
         {movie.backdrop_path && (
           <img
             src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
@@ -39,6 +39,9 @@ const MovieDetail: React.FC<MovieDetailProps> = ({ movies }) => {
           <p className="text-lg mb-2">Release Date: {movie.release_date}</p>
           <p className="text-lg mb-2">Popularity: {movie.popularity}</p>
           <p className="text-sm">{movie.overview}</p>
+          <button className='border px-3 py-1 mt-5 bg-white text-black font-semibold'>
+          <a href={`https://www.awafim.tv/browse?q=${movie.title}`}>Download Here</a>
+          </button>
         </div>
       </div>
     </div>
