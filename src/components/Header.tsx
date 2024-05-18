@@ -17,7 +17,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ movies }) => (
   <header className="relative w-full md:h-[40vh] flex justify-center items-center">
     {movies.length > 0 && movies[0].backdrop_path && (
-      <div className="relative md:w-[80%] h-full">
+      <div className="relative w-full md:w-[80%] h-full">
         <img
           src={`https://image.tmdb.org/t/p/w500${movies[0].backdrop_path}`}
           alt={movies[0].title}

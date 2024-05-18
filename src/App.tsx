@@ -40,7 +40,6 @@ function App() {
 
   return (
     <Router>
-      <Header movies={movies} />
       <Routes>
         <Route path="/" element={<MovieList movies={movies} />} />
         <Route path="/movie/:id" element={<MovieDetail movies={movies} />} />

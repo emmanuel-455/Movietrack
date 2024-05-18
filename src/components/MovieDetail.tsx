@@ -38,7 +38,7 @@ const MovieDetail: React.FC<MovieDetailProps> = ({ movies }) => {
           <h1 className="text-3xl font-bold mb-4">{movie.title}</h1>
           <p className="text-lg mb-2">Release Date: {movie.release_date}</p>
           <p className="text-lg mb-2">Popularity: {movie.popularity}</p>
-          <p className="text-lg">{movie.overview}</p>
+          <p className="text-sm">{movie.overview}</p>
         </div>
       </div>
     </div>
