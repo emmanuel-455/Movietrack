@@ -31,7 +31,7 @@ const MovieDetail: React.FC<MovieDetailProps> = ({ movies }) => {
           <img
             src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
             alt={movie.title}
-            className="w-full h-[40vh] object-cover"
+            className="w-full sm:h-[30vh] md:h-[40vh] object-cover"
           />
         )}
         <div className="p-4 w-full">
