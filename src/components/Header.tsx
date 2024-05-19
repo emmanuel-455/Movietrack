@@ -24,8 +24,11 @@ const Header: React.FC<HeaderProps> = ({ movies }) => (
           className="w-full h-full object-cover"
         />
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 flex justify-center items-center">
-          <h1 className="absolute top-[80%] left-5 text-white font-bold md:text-3xl text-[18px]">
+        <h1 className="absolute top-[80%] left-5 text-white font-bold md:text-3xl text-[18px]">
             {movies[0].title}
+          </h1>
+          <h1 className="absolute top-[10%] left-5 text-[white] font-bold md:text-2xl text-[18px]">
+            Movie Tracker
           </h1>
         </div>
       </div>

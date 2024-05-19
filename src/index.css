@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  background-color: black;
-  color: white;
+  background-color: #32292F;
+  
   font-family: "Space Grotesk", sans-serif;
 }
