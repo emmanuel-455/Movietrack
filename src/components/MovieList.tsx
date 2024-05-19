@@ -41,7 +41,7 @@ const MovieList: React.FC<MovieListProps> = ({ movies }) => {
               <p className="text-xs font-semibold italic text-[#9c9c9c] mb-1">Release Date: {movie.release_date}</p>
               <p title={movie.overview} className="text-[15px] line-clamp-2 text-[#d4d4d4] font-semibold">{movie.overview}</p>
               <p className="text-xs text-[#fdfdfd] mb-2">Popularity: {movie.popularity}</p>
-              <p className='text-right font-bold text-white mr-2 mb-2 text-lg'>View Details</p>
+              <p className='text-right font-bold text-white mr-2 mb-2 text-base'>View Details</p>
             </div>
           </div>
         </Link>
